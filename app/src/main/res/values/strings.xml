@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">MyDatabaseExample</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="action_favorite">fav</string>
+    <string name="action_settings">setting</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_addNew">Add new</string>
+    <string-array name="listArray">
+        <item>List</item>
+        <item>Find</item>
+        <item>Category</item>
+        <item>Add new</item>
+    </string-array>
 </resources>

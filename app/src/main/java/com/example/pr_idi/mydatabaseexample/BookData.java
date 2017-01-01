@@ -15,16 +15,16 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 public class BookData {
-
     // Database fields
-    private SQLiteDatabase database;
+    protected SQLiteDatabase database;
 
     // Helper to manipulate table
-    private MySQLiteHelper dbHelper;
+    protected MySQLiteHelper dbHelper;
 
     // Here we only select Title and Author, must select the appropriate columns
-    private String[] allColumns = { MySQLiteHelper.COLUMN_ID,
+    protected String[] allColumns = { MySQLiteHelper.COLUMN_ID,
             MySQLiteHelper.COLUMN_TITLE, MySQLiteHelper.COLUMN_AUTHOR};
+
 
     public BookData(Context context) {
         dbHelper = new MySQLiteHelper(context);
@@ -64,8 +64,7 @@ public class BookData {
         // to feed the view.
 
         Cursor cursor = database.query(MySQLiteHelper.TABLE_BOOKS,
-                allColumns, MySQLiteHelper.COLUMN_ID + " = " + insertId, null,
-                null, null, null);
+                allColumns, MySQLiteHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
         cursor.moveToFirst();
         Book newBook = cursorToBook(cursor);
 
