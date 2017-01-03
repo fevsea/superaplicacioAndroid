@@ -1,2 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_42f82538b560dac4e564a7b138a1ecb03858a46c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bf78c9896617f79dfeaff9648ca28962688b3af1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="6a3f55df1a58e02c1a6087a2631c3482188a54ec">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_28bd81db68ba46ce7ec3d48ff9021bba7e886205/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_e174191205181cc47807e80958c15c97276c6a72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_6372bee5ceccd854c64c693044ec31f5ef98bb20/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_5f24318d561e35a31f02aef9cdf4b3ad890b4de5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_27ffcfb1ec2b4aa361c36ae8397957995a68d9aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b3e3160236b510ab0760914172f8225dcaa32412/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9a4d06175e0ec7b6ff8d4bfa2b67170b5ece458f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_8268afe494358a20d380e482e4715d0a497e7598/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_39916f5f5e0ce5654563d52e4a54eed6e87790b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_577c20c0fd5da4426b6dd2e7fe3a0a93c39f9451/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_cd9da153f1df91b9192e2dd29bdd162f64e1a700/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_1170c09522fb7964b85babd224ad9f0a22b4e1a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_5ad974707e8ae4705e02a13b71f578a09a828c64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_1b0cb7d99e433bca455dc28369573aa1b1ee7647/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="a328a9122c9452d9b455be6fe6773af535817b4b">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3cac5fef74f43b7e3f5c308af4d71fb69dfab676/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_f170e3091a0aa7cde2302664cfd861c4b4cffbe0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/alejandro/code/bookMe/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f8cd70fb3e84b00dffc7482fd1628e5cb01d2cac/classes.dex" />
+    </item>
+
+</items>
