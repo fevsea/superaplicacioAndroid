@@ -1,12 +1,16 @@
 package com.example.pr_idi.mydatabaseexample;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +20,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.List;
@@ -26,9 +31,12 @@ public class PrincipalActivity extends AppCompatActivity
 
     // for Log.x(TAG, "Error x");
     public static final String TAG = PrincipalActivity.class.getSimpleName();
+    static final int ITEM_ADED = 0;
+
 
     private BookAdapter mAdapter;
     private RecyclerView recyclerView;
+    List<Book> books;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +46,22 @@ public class PrincipalActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
+        });*/
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), AddItem.class);
+                startActivityForResult(intent, ITEM_ADED);
+            }
+
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -59,7 +77,7 @@ public class PrincipalActivity extends AppCompatActivity
         //setContentView(R.layout.content_principal);
         recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
 
-        List<Book> books = generateBooks();
+        generateBooks();
         mAdapter = new BookAdapter(books, "author");
 
         /*
@@ -80,6 +98,7 @@ public class PrincipalActivity extends AppCompatActivity
          * Use this setting to improve performance if you know that changes in content do not
          * change the child layout size in the RecyclerView
          */
+
         recyclerView.setHasFixedSize(true);
 
         /*
@@ -89,12 +108,18 @@ public class PrincipalActivity extends AppCompatActivity
         recyclerView.setAdapter(mAdapter);
     }
 
-    private List<Book> generateBooks() {
+    public void updateBooks(){
+        generateBooks();
+        recyclerView.setAdapter(new BookAdapter(books, "author"));
+        recyclerView.invalidate();
+    }
+
+    protected void generateBooks() {
         BookData mBookData = new BookData(getApplicationContext());
         mBookData.open();
-        List<Book> books = mBookData.getAllBooks();
+        books = mBookData.getAllBooks();
+        mBookData.close();
         //books.sort();
-        return books;
     }
 
     @Override
@@ -155,6 +180,17 @@ public class PrincipalActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode,
+                                    Intent data) {
+        if (requestCode == ITEM_ADED) {
+            Log.d(TAG, "DETECTED");
+            if (resultCode == Activity.RESULT_OK) {
+                Log.d(TAG, "EXECUTED");
+                updateBooks();
+            }
+        }
     }
 
 }

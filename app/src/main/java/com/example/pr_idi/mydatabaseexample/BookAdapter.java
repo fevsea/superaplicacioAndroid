@@ -71,7 +71,6 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
         if (book.getYear() != -1) {
             holder.year.setText(String.valueOf(book.getYear()));
         }
-        Log.d(TAG, book.getTitle());
     }
 
     /**

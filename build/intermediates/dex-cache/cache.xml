@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="6a3f55df1a58e02c1a6087a2631c3482188a54ec">
+        sha1="4cbdb370b0c80ab6fc5bded08d49f6bd251d50a8">
         <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_28bd81db68ba46ce7ec3d48ff9021bba7e886205/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.1"
-        sha1="a328a9122c9452d9b455be6fe6773af535817b4b">
+        sha1="c041b612bb21b51a6871c7751637ad6f6b1e18c9">
         <dex dex="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3cac5fef74f43b7e3f5c308af4d71fb69dfab676/classes.dex" />
     </item>
     <item
