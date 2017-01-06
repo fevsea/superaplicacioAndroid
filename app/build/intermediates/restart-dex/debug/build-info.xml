@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="22"
+    density="xhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="22549005967920"
+    token="4399126820557494339" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <build
+        timestamp="15253419073783"
+        verifier="MANIFEST_FILE_CHANGE" >
+        <artifact
+            location="/home/alejandro/code/bookMe/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="19694858176225"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="21598679129449"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/alejandro/code/bookMe/app/build/intermediates/builds/debug/21598679129449/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="21615040224080"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/alejandro/code/bookMe/app/build/intermediates/builds/debug/21615040224080/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="21640129701456"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/alejandro/code/bookMe/app/build/intermediates/builds/debug/21640129701456/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="22549005967920" />
+
+</instant-run>
