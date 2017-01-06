@@ -1,7 +1,4 @@
-#Fri Jan 06 15:17:42 CET 2017
-base.0=/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_28bd81db68ba46ce7ec3d48ff9021bba7e886205
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3cac5fef74f43b7e3f5c308af4d71fb69dfab676/classes.dex
-base.1=/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3cac5fef74f43b7e3f5c308af4d71fb69dfab676
-file.0=/home/alejandro/code/bookMe/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_28bd81db68ba46ce7ec3d48ff9021bba7e886205/classes.dex
+#Fri Jan 06 18:47:38 CET 2017
+base.0=/home/serk/Android/practAndroid/partA2/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/serk/Android/practAndroid/partA2/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

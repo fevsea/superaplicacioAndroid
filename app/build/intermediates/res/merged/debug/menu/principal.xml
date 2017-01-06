@@ -7,4 +7,9 @@
         android:title="@string/action_settings"
         app:showAsAction="ifRoom"
         android:icon="@android:drawable/ic_dialog_dialer" />
+    <item android:id="@+id/menuSearch"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
 </menu>

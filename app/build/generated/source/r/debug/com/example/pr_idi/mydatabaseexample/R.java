@@ -2693,6 +2693,7 @@ containing a value of this type.
         public static final int list_item=0x7f0e0044;
         public static final int list_title=0x7f0e009b;
         public static final int media_actions=0x7f0e0091;
+        public static final int menuSearch=0x7f0e00a1;
         public static final int middle=0x7f0e0035;
         public static final int mini=0x7f0e0033;
         public static final int multiply=0x7f0e001b;

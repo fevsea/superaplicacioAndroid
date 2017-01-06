@@ -73,6 +73,11 @@ public class Book {
         this.personal_evaluation = personal_evaluation;
     }
 
+    public boolean match(String text) { //ToDo: ignore final spaces
+        return author.toLowerCase().contains(text.toLowerCase()) || this.title.toLowerCase().contains(text.toLowerCase()) ||
+                this.category.toLowerCase().contains(text.toLowerCase());
+    }
+
     // Will be used by the ArrayAdapter in the ListView
     // Note that it only produces the title and the author
     // Extra information should be created by modifying this
