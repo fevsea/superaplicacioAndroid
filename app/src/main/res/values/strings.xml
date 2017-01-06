@@ -6,6 +6,11 @@
     <string name="action_settings">setting</string>
     <string name="action_delete">Delete</string>
     <string name="action_addNew">Add new</string>
+    <string name="txtCredits">Alejandro Agustin: https://github.com/fevsea</string>
+    <string name="txtGritMark">Marc P. Masó: https://github.com/serk12</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+
     <string-array name="listArray">
         <item>List</item>
         <item>Find</item>

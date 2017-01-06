@@ -9,6 +9,5 @@ public class DrawerItemClickListener implements ListView.OnItemClickListener {
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         //ToDo: implement this
     }
-
 }
 
