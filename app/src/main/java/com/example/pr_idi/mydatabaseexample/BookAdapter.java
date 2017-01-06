@@ -18,7 +18,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     private static final String TAG = BookAdapter.class.getSimpleName();
 
     private List<Book> bookList;
-    private String aux;
+    public String aux;
 
 
     public BookAdapter(List<Book> bookList, String aux) {
@@ -69,7 +69,10 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             holder.genre.setText(book.getAuthor());
         }
         if (book.getYear() != -1) {
-            holder.year.setText(String.valueOf(book.getYear()));
+            //holder.year.setText(String.valueOf(book.getYear()));
+        }
+        if (book.getCategory() != null) {
+            holder.cat.setText(String.valueOf(book.getCategory()));
         }
     }
 
@@ -89,7 +92,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
      */
     public class BookViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView title, year, genre;
+        public TextView title, year, genre, cat;
 
 
         /**
@@ -101,8 +104,10 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
             super(itemView);
 
             title = (TextView) itemView.findViewById(R.id.title);
-            year  = (TextView) itemView.findViewById(R.id.year );
+            year  = (TextView) itemView.findViewById(R.id.cat );
             genre = (TextView) itemView.findViewById(R.id.genre);
+            cat   = (TextView) itemView.findViewById(R.id.year  );
+
         }
     }
 

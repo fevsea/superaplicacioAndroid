@@ -23,7 +23,15 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
+import java.util.Random;
+import java.util.Stack;
+import java.util.Vector;
 
 
 public class PrincipalActivity extends AppCompatActivity
@@ -32,11 +40,20 @@ public class PrincipalActivity extends AppCompatActivity
     // for Log.x(TAG, "Error x");
     public static final String TAG = PrincipalActivity.class.getSimpleName();
     static final int ITEM_ADED = 0;
+    BookData mBookData;
+    Queue<Book> deleted;
 
 
     private BookAdapter mAdapter;
     private RecyclerView recyclerView;
     List<Book> books;
+
+    Screens actual;
+    Stack<Screens> screens;
+
+    public enum Screens {
+        TITLE, AUTHOR, CATHEGORY
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +61,11 @@ public class PrincipalActivity extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setTitle("Book");
+        mBookData = new BookData(getApplicationContext());
+        deleted = new LinkedList<Book>();
 
+        actual = Screens.TITLE;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         /*
         fab.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +101,30 @@ public class PrincipalActivity extends AppCompatActivity
         generateBooks();
         mAdapter = new BookAdapter(books, "author");
 
+
+        ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
+                mBookData.open();
+                Integer pos = viewHolder.getAdapterPosition();
+                Log.d(TAG, "Pos: " + pos);
+                Book b = books.get(pos);
+                deleted.add(b);
+                mBookData.deleteBook(b);
+                mBookData.close();
+
+                mAdapter.notifyItemRemoved(pos);
+            }
+        };
+
+
+
         /*
          * A LinearLayoutManager is responsible for measuring and positioning item views within a
          * RecyclerView into a linear list. This means that it can produce either a horizontal or
@@ -93,7 +138,7 @@ public class PrincipalActivity extends AppCompatActivity
          */
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        //recyclerView.setItemAnimator(new DefaultItemAnimator());
         /*
          * Use this setting to improve performance if you know that changes in content do not
          * change the child layout size in the RecyclerView
@@ -105,6 +150,9 @@ public class PrincipalActivity extends AppCompatActivity
          * The GreenAdapter is responsible for displaying each item in the list.
          */
 
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
+        itemTouchHelper.attachToRecyclerView(recyclerView);
+
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -114,13 +162,41 @@ public class PrincipalActivity extends AppCompatActivity
         recyclerView.invalidate();
     }
 
+
+    public class compareByTitle implements Comparator<Book> {
+        @Override
+        public int compare(Book a, Book b) {
+            return a.getTitle().toLowerCase().compareTo(b.getTitle().toLowerCase());
+        }
+    }
+    public class compareByAuthor implements Comparator<Book> {
+        @Override
+        public int compare(Book a, Book b) {
+            return a.getAuthor().toLowerCase().compareTo(b.getAuthor().toLowerCase());
+        }
+    }
+    public class compareByCathegory implements Comparator<Book> {
+        @Override
+        public int compare(Book a, Book b) {
+            return a.getCategory().toLowerCase().compareTo(b.getCategory().toLowerCase());
+        }
+    }
+
+
+
     protected void generateBooks() {
-        BookData mBookData = new BookData(getApplicationContext());
         mBookData.open();
         books = mBookData.getAllBooks();
         mBookData.close();
-        //books.sort();
+        if (actual == Screens.CATHEGORY){
+            Collections.sort(books, new compareByCathegory() );
+        } else if (actual == Screens.AUTHOR){
+            Collections.sort(books, new compareByAuthor() );
+        } else if (actual == Screens.TITLE){
+            Collections.sort(books, new compareByTitle() );
+        }
     }
+
 
     @Override
     public void onBackPressed() {
@@ -150,6 +226,13 @@ public class PrincipalActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             Context context = getApplicationContext();
             Toast.makeText(context, "Settings", Toast.LENGTH_LONG).show();
+            String[] newBook = new String[] { "Miguel Strogoff", "Jules Verne", "Ulysses", "James Joyce", "Don Quijote", "Miguel de Cervantes", "Metamorphosis", "Kafka" };
+            int nextInt = new Random().nextInt(4);
+            // save the new book to the database
+            mBookData.open();
+            mBookData.createBook(newBook[nextInt*2], newBook[nextInt*2 + 1], null, null, null);
+            mBookData.close();
+            updateBooks();
             return true;
         }
 
@@ -162,19 +245,22 @@ public class PrincipalActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Context context = getApplicationContext();
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-            Toast.makeText(context, "Camera", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_gallery) {
-            Toast.makeText(context, "Gallery", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_slideshow) {
-            Toast.makeText(context, "Slideshow", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_manage) {
-            Toast.makeText(context, "Manage", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_share) {
-            Toast.makeText(context, "Share", Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_send) {
-            Toast.makeText(context, "Send", Toast.LENGTH_SHORT).show();
+        if (id == R.id.list_cat) {
+            actual = Screens.CATHEGORY;
+            setTitle("Category");
+            updateBooks();
+        } else if (id == R.id.list_title) {
+            actual = Screens.TITLE;
+            setTitle("Book");
+            updateBooks();
+        } else if (id == R.id.list_author) {
+            actual = Screens.AUTHOR;
+            setTitle("Author");
+            updateBooks();
+        } else if (id == R.id.about) {
+            Toast.makeText(context, "About", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.help) {
+            Toast.makeText(context, "Help", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -191,6 +277,20 @@ public class PrincipalActivity extends AppCompatActivity
                 updateBooks();
             }
         }
+    }
+
+    @Override
+    protected void onResume() {
+        mBookData.open();
+        super.onResume();
+    }
+
+    // Life cycle methods. Check whether it is necessary to reimplement them
+
+    @Override
+    protected void onPause() {
+        mBookData.close();
+        super.onPause();
     }
 
 }
