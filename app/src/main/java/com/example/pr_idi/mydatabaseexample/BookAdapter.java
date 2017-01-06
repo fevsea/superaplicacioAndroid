@@ -21,6 +21,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     private String aux;
 
 
+
     public BookAdapter(List<Book> bookList, String aux) {
         this.bookList = bookList;
         this.aux = aux;
