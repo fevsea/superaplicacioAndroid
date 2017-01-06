@@ -1,5 +1,7 @@
 package com.example.pr_idi.mydatabaseexample;
 
+import android.util.Log;
+
 /**
  * Book
  * Created by pr_idi on 10/11/16.
@@ -74,6 +76,11 @@ public class Book {
     }
 
     public boolean match(String text) { //ToDo: ignore final spaces
+        if (text.length() > 0) {
+            while (text.charAt(text.length() - 1) == ' ') {
+                text = text.substring(0, text.length() - 2);
+            }
+        }
         return author.toLowerCase().contains(text.toLowerCase()) || this.title.toLowerCase().contains(text.toLowerCase()) ||
                 this.category.toLowerCase().contains(text.toLowerCase());
     }
