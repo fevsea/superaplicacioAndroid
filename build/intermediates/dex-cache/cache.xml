@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_17087b2a3d1287b01626a788575ecd127c35f2b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -21,12 +30,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_882187cf75e35102b5fbf2fb8c57be61145714dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
         <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_9a459088f0bfdf9c45ba52a0e7e0c94150b13163.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_bd9fcafe81c52e8475bab4a299b54c6bd53960fc.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,57 +84,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_6847f7d4b65fc4412674656a10988ff5ce3d629d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_ea785c4f2fd8f3e4488f8c2becdb3fbcddf3f96c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_17087b2a3d1287b01626a788575ecd127c35f2b7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_882187cf75e35102b5fbf2fb8c57be61145714dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_bd9fcafe81c52e8475bab4a299b54c6bd53960fc.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
         <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_e054c0c52918ca773a050a69fe1510beb51079c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_6847f7d4b65fc4412674656a10988ff5ce3d629d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -126,6 +117,15 @@
         revision="24.0.1"
         sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
         <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_c1785b3876df05fcd23966997616304660f822a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/serk/Android/practAndroid/partA2/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_ea785c4f2fd8f3e4488f8c2becdb3fbcddf3f96c.jar" />
     </item>
     <item
         is-multidex="false"

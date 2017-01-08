@@ -3,15 +3,19 @@ package com.example.pr_idi.mydatabaseexample;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.view.ContextThemeWrapper;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.MenuInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +25,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.SearchView;
 import android.widget.Toast;
@@ -56,6 +61,9 @@ public class PrincipalActivity extends AppCompatActivity
     public enum Screens {
         TITLE, AUTHOR, CATHEGORY
     }
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,8 +109,21 @@ public class PrincipalActivity extends AppCompatActivity
         recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
 
         generateBooks();
-        mAdapter = new BookAdapter(books, "author");
 
+
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
+                recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {}
+            @Override
+            public void onLongItemClick(View view, int position) {
+                CustomDialogClass cdd = new CustomDialogClass(PrincipalActivity.this, books.get(position));
+                cdd.show();
+            }
+        }));
+
+
+        mAdapter = new BookAdapter(books, "author");
 
         ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
 
@@ -123,6 +144,7 @@ public class PrincipalActivity extends AppCompatActivity
 
                 mAdapter.notifyItemRemoved(pos);
             }
+
         };
 
 
@@ -260,9 +282,11 @@ public class PrincipalActivity extends AppCompatActivity
             setTitle("Author");
             updateBooks();
         } else if (id == R.id.about) {
-            Toast.makeText(context, "About", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), About.class);
+            startActivityForResult(intent, ITEM_ADED);
         } else if (id == R.id.help) {
-            Toast.makeText(context, "Help", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), Help.class);
+            startActivityForResult(intent, ITEM_ADED);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

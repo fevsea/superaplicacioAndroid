@@ -17,7 +17,7 @@ import android.util.Log;
 
 public class BookData {
 
-    private final static String unknown = "Unknown";
+    public final static String unknown = "Unknown";
     public static final String PREFS_NAME = "MyPrefsFile";
 
 
@@ -108,6 +108,12 @@ public class BookData {
         return books;
     }
 
+    public void update(Book book) {
+        ContentValues valuesOfBook = bookToContent(book);
+        database.update(MySQLiteHelper.TABLE_BOOKS, valuesOfBook,
+                MySQLiteHelper.COLUMN_ID + " = " + book.getId(), null);
+    }
+
     private Book cursorToBook(Cursor cursor) {
         Book book = new Book();
         book.setId(cursor.getLong(0));
@@ -117,5 +123,23 @@ public class BookData {
         book.setYear( Integer.parseInt(cursor.getString(4)));
         book.setPersonal_evaluation(cursor.getString(5));
     return book;
+    }
+
+    private ContentValues bookToContent(Book book) {
+        ContentValues valuesOfBook = new ContentValues();
+        if (book.getAuthor() != null)
+            valuesOfBook.put(MySQLiteHelper.COLUMN_AUTHOR, book.getAuthor());
+        if (book.getCategory() != null)
+            valuesOfBook.put(MySQLiteHelper.COLUMN_CATEGORY, book.getCategory());
+        if (book.getPersonal_evaluation() != null)
+            valuesOfBook.put(MySQLiteHelper.COLUMN_PERSONAL_EVALUATION, book.getPersonal_evaluation());
+        if (book.getPublisher() != null)
+            valuesOfBook.put(MySQLiteHelper.COLUMN_PUBLISHER, book.getPublisher());
+        if (book.getTitle() != null)
+            valuesOfBook.put(MySQLiteHelper.COLUMN_TITLE, book.getTitle());
+
+        valuesOfBook.put(MySQLiteHelper.COLUMN_YEAR, book.getYear());
+        valuesOfBook.put(MySQLiteHelper.COLUMN_ID, book.getId());
+        return valuesOfBook;
     }
 }

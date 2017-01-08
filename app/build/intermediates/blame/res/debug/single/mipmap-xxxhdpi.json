@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/alejandro/code/bookMe/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
-        "source": "/home/alejandro/code/bookMe/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
         "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     }
