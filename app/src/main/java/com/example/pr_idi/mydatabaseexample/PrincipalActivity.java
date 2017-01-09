@@ -43,13 +43,10 @@ import java.util.Vector;
 
 public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    // for Log.x(TAG, "Error x");
     public static final String TAG = PrincipalActivity.class.getSimpleName();
     static final int ITEM_ADED = 0;
     BookData mBookData;
     Queue<Book> deleted;
-
 
     private BookAdapter mAdapter;
     private RecyclerView recyclerView;
@@ -58,12 +55,7 @@ public class PrincipalActivity extends AppCompatActivity
     Screens actual;
     Stack<Screens> screens;
 
-    public enum Screens {
-        TITLE, AUTHOR, CATHEGORY
-    }
-
-
-
+    public enum Screens {TITLE, AUTHOR, CATHEGORY}
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,15 +69,6 @@ public class PrincipalActivity extends AppCompatActivity
 
         actual = Screens.TITLE;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        /*
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });*/
-
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,13 +86,9 @@ public class PrincipalActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
-        //setContentView(R.layout.content_principal);
         recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
 
         generateBooks();
-
 
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
                 recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
@@ -146,37 +125,11 @@ public class PrincipalActivity extends AppCompatActivity
             }
 
         };
-
-
-
-        /*
-         * A LinearLayoutManager is responsible for measuring and positioning item views within a
-         * RecyclerView into a linear list. This means that it can produce either a horizontal or
-         * vertical list depending on which parameter you pass in to the LinearLayoutManager
-         * constructor. By default, if you don't specify an orientation, you get a vertical list.
-         * In our case, we want a vertical list, so we don't need to pass in an orientation flag to
-         * the LinearLayoutManager constructor.
-         *
-         * There are other LayoutManagers available to display your data in uniform grids,
-         * staggered grids, and more! See the developer documentation for more details.
-         */
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
-        //recyclerView.setItemAnimator(new DefaultItemAnimator());
-        /*
-         * Use this setting to improve performance if you know that changes in content do not
-         * change the child layout size in the RecyclerView
-         */
-
         recyclerView.setHasFixedSize(true);
-
-        /*
-         * The GreenAdapter is responsible for displaying each item in the list.
-         */
-
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
         itemTouchHelper.attachToRecyclerView(recyclerView);
-
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -232,21 +185,10 @@ public class PrincipalActivity extends AppCompatActivity
         }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.principal, menu);
-//        return true;
-//    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Context context = getApplicationContext();
             Toast.makeText(context, "Settings", Toast.LENGTH_LONG).show();
@@ -259,14 +201,12 @@ public class PrincipalActivity extends AppCompatActivity
             updateBooks();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
         Context context = getApplicationContext();
         if (id == R.id.list_cat) {
@@ -311,8 +251,6 @@ public class PrincipalActivity extends AppCompatActivity
         super.onResume();
     }
 
-    // Life cycle methods. Check whether it is necessary to reimplement them
-
     @Override
     protected void onPause() {
         mBookData.close();
@@ -347,6 +285,4 @@ public class PrincipalActivity extends AppCompatActivity
         });
         return super.onCreateOptionsMenu(menu);
     }
-
-
 }

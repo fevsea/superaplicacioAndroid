@@ -651,9 +651,10 @@ int drawable ic_menu_share 0x7f02005b
 int drawable ic_menu_slideshow 0x7f02005c
 int drawable ic_notifications_black_24dp 0x7f02005d
 int drawable ic_sync_black_24dp 0x7f02005e
-int drawable navigation_empty_icon 0x7f02005f
-int drawable notification_template_icon_bg 0x7f020061
-int drawable side_nav_bar 0x7f020060
+int drawable icon 0x7f02005f
+int drawable navigation_empty_icon 0x7f020060
+int drawable notification_template_icon_bg 0x7f020062
+int drawable side_nav_bar 0x7f020061
 int id about 0x7f0e00a3
 int id action0 0x7f0e0092
 int id action_bar 0x7f0e005e

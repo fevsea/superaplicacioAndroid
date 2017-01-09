@@ -4,7 +4,15 @@
         "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/menu/principal.xml"
     },
     {
+        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/menu/principal.xml",
+        "source": "/home/serk/Android/practAndroid/partB/app/src/main/res/menu/principal.xml"
+    },
+    {
         "merged": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/res/merged/debug/menu/activity_principal_drawer.xml",
         "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/menu/activity_principal_drawer.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/menu/activity_principal_drawer.xml",
+        "source": "/home/serk/Android/practAndroid/partB/app/src/main/res/menu/activity_principal_drawer.xml"
     }
 ]

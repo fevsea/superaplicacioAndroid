@@ -2602,9 +2602,10 @@ containing a value of this type.
         public static final int ic_menu_slideshow=0x7f02005c;
         public static final int ic_notifications_black_24dp=0x7f02005d;
         public static final int ic_sync_black_24dp=0x7f02005e;
-        public static final int navigation_empty_icon=0x7f02005f;
-        public static final int notification_template_icon_bg=0x7f020061;
-        public static final int side_nav_bar=0x7f020060;
+        public static final int icon=0x7f02005f;
+        public static final int navigation_empty_icon=0x7f020060;
+        public static final int notification_template_icon_bg=0x7f020062;
+        public static final int side_nav_bar=0x7f020061;
     }
     public static final class id {
         public static final int about=0x7f0e00a3;
