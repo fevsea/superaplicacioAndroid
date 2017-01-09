@@ -26,12 +26,11 @@ public class Help extends BackToolBar {
         childListItem = new ArrayList<List<Map<String, String>>>();
 
 
-        addNewElement("How add new book", "press the red button and fill the params next press create botton");
-        addNewElement("How add new book", "press the fucking red button\nfill the params\npress create botton");
-        addNewElement("How add new book", "press the fucking red button\nfill the params\npress create botton");
-        addNewElement("How add new book", "press the fucking red button\nfill the params\npress create botton");
-        addNewElement("How add new book", "press the fucking red button\nfill the params\npress create botton");
-        addNewElement("How add new book", "press the fucking red button\nfill the params\npress create botton");
+        addNewElement("Add new book", "press the red button and fill the params next press create botton");
+        addNewElement("Delete a book", "swipe to the left");
+        addNewElement("Find a book", "press the lent icon and write the name/autor/category");
+        addNewElement("Eval a book", "keep press a book and select how many starts deservs");
+        addNewElement("See info of a book", "press softly a element of the list");
 
     }
 

@@ -724,8 +724,8 @@ int id fill_horizontal 0x7f0e0031
 int id fill_vertical 0x7f0e0027
 int id fixed 0x7f0e003b
 int id genre 0x7f0e008c
-int id gitAlej 0x7f0e0070
-int id gitMarc 0x7f0e0072
+int id gitAlej 0x7f0e0071
+int id gitMarc 0x7f0e0070
 int id group 0x7f0e008f
 int id help 0x7f0e00a2
 int id home 0x7f0e0004
@@ -805,7 +805,7 @@ int id tabMode 0x7f0e000d
 int id text 0x7f0e009c
 int id text2 0x7f0e009a
 int id textSpacerNoButtons 0x7f0e0050
-int id textView 0x7f0e0071
+int id textView 0x7f0e0072
 int id textView2 0x7f0e0073
 int id text_input_password_toggle 0x7f0e008b
 int id time 0x7f0e0098

@@ -4,16 +4,16 @@
         "source": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/activity_principal.xml",
-        "source": "/home/serk/Android/practAndroid/partB/app/src/main/res/layout/activity_principal.xml"
+        "merged": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/layout/main.xml"
     },
     {
         "merged": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/res/merged/debug/layout/nav_header_principal.xml",
         "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/layout/nav_header_principal.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/partA2/app/build/intermediates/res/merged/debug/layout/main.xml",
-        "source": "/home/serk/Android/practAndroid/partA2/app/src/main/res/layout/main.xml"
+        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/activity_principal.xml",
+        "source": "/home/serk/Android/practAndroid/partB/app/src/main/res/layout/activity_principal.xml"
     },
     {
         "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
@@ -24,12 +24,12 @@
         "source": "/home/serk/Android/practAndroid/partB/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_header.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
-        "source": "/home/serk/Android/practAndroid/partB/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_menu_item_action_area.xml"
-    },
-    {
         "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/home/serk/Android/practAndroid/partB/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/serk/Android/practAndroid/partB/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/home/serk/Android/practAndroid/partB/app/build/intermediates/res/merged/debug/layout/list_item.xml",

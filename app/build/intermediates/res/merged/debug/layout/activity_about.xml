@@ -23,18 +23,7 @@ tools:context="com.example.pr_idi.mydatabaseexample.About">
 
     </android.support.design.widget.AppBarLayout>
 
-<TextView
-    android:id="@+id/gitAlej"
-    android:autoLink="web"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/txtCredits"
-    android:layout_below="@+id/textView"
-    android:layout_alignParentStart="true"
-    android:layout_marginStart="39dp"
-    android:textSize="18sp" />
-
-<TextView
+    <TextView
     android:id="@+id/gitMarc"
     android:autoLink="web"
     android:layout_width="wrap_content"
@@ -56,15 +45,27 @@ tools:context="com.example.pr_idi.mydatabaseexample.About">
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:textSize="25sp" />
 
-<TextView
-    android:textStyle="bold"
-    android:text="Practice for IDI winter course 2016/2017"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/textView2"
-    android:textSize="25sp"
-    android:layout_below="@+id/gitMarc"
-    android:layout_alignParentStart="true" />
+    <TextView
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Practice for IDI \nwinter course 2016/2017"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/gitMarc" />
+
+    <TextView
+        android:id="@+id/gitAlej"
+        android:autoLink="web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtCredits"
+        android:textSize="18sp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

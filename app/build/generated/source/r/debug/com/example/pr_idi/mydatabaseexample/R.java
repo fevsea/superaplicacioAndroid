@@ -2677,8 +2677,8 @@ containing a value of this type.
         public static final int fill_vertical=0x7f0e0027;
         public static final int fixed=0x7f0e003b;
         public static final int genre=0x7f0e008c;
-        public static final int gitAlej=0x7f0e0070;
-        public static final int gitMarc=0x7f0e0072;
+        public static final int gitAlej=0x7f0e0071;
+        public static final int gitMarc=0x7f0e0070;
         public static final int group=0x7f0e008f;
         public static final int help=0x7f0e00a2;
         public static final int home=0x7f0e0004;
@@ -2758,7 +2758,7 @@ containing a value of this type.
         public static final int text=0x7f0e009c;
         public static final int text2=0x7f0e009a;
         public static final int textSpacerNoButtons=0x7f0e0050;
-        public static final int textView=0x7f0e0071;
+        public static final int textView=0x7f0e0072;
         public static final int textView2=0x7f0e0073;
         public static final int text_input_password_toggle=0x7f0e008b;
         public static final int time=0x7f0e0098;

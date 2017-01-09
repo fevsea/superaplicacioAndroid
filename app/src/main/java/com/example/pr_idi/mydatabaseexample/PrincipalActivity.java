@@ -66,7 +66,6 @@ public class PrincipalActivity extends AppCompatActivity
         setTitle("Book");
         mBookData = new BookData(getApplicationContext());
         deleted = new LinkedList<Book>();
-
         actual = Screens.TITLE;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -77,19 +76,15 @@ public class PrincipalActivity extends AppCompatActivity
             }
 
         });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
-
         generateBooks();
-
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
                 recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
@@ -100,10 +95,7 @@ public class PrincipalActivity extends AppCompatActivity
                 cdd.show();
             }
         }));
-
-
         mAdapter = new BookAdapter(books, "author");
-
         ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
 
             @Override
@@ -120,10 +112,8 @@ public class PrincipalActivity extends AppCompatActivity
                 deleted.add(b);
                 mBookData.deleteBook(b);
                 mBookData.close();
-
                 mAdapter.notifyItemRemoved(pos);
             }
-
         };
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
@@ -159,8 +149,6 @@ public class PrincipalActivity extends AppCompatActivity
         }
     }
 
-
-
     protected void generateBooks() {
         mBookData.open();
         books = mBookData.getAllBooks();
@@ -173,7 +161,6 @@ public class PrincipalActivity extends AppCompatActivity
             Collections.sort(books, new compareByTitle() );
         }
     }
-
 
     @Override
     public void onBackPressed() {
@@ -194,7 +181,6 @@ public class PrincipalActivity extends AppCompatActivity
             Toast.makeText(context, "Settings", Toast.LENGTH_LONG).show();
             String[] newBook = new String[] { "Miguel Strogoff", "Jules Verne", "Ulysses", "James Joyce", "Don Quijote", "Miguel de Cervantes", "Metamorphosis", "Kafka" };
             int nextInt = new Random().nextInt(4);
-            // save the new book to the database
             mBookData.open();
             mBookData.createBook(newBook[nextInt*2], newBook[nextInt*2 + 1], null, null, null);
             mBookData.close();
@@ -234,8 +220,7 @@ public class PrincipalActivity extends AppCompatActivity
         return true;
     }
 
-    protected void onActivityResult(int requestCode, int resultCode,
-                                    Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == ITEM_ADED) {
             Log.d(TAG, "DETECTED");
             if (resultCode == Activity.RESULT_OK) {
@@ -272,7 +257,6 @@ public class PrincipalActivity extends AppCompatActivity
             @Override
             public boolean onQueryTextChange(String newText) {
                 List<Book> newBook = new ArrayList<Book>();
-
                 for (Book u : books) {
                     if (u.match(newText)) {
                         newBook.add(u);

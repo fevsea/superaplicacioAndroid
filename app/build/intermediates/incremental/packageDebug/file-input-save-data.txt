@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jan 09 15:21:33 CET 2017
+#Mon Jan 09 15:46:18 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/serk/Android/practAndroid/partB/app/build/intermediates/res/resources-debug.ap_/res/layout/select_dialog_item_material.xml
