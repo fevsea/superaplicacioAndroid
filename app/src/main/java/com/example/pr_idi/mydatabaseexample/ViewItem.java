@@ -26,7 +26,7 @@ public class ViewItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_item);
         values = getIntent().getStringArrayExtra("identifier");
-        setTitle("View book");
+        setTitle("New book");
 
         titleV = (TextView) findViewById(R.id.new_title);
         authorV = (TextView) findViewById(R.id.new_author);
