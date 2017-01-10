@@ -2,175 +2,157 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/alejandro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_42f82538b560dac4e564a7b138a1ecb03858a46c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_dcc08fafab4e8d11e53367d3dccc5730619e36dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_72586c81d8b0efac6052072968f23377d5023c10/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_dabaf7f7c5d5020f3049f0f6f5dfc32ab52d3c91/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_4b58e78c31b962c0f5a2d39ad2d6766b05dfc2fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_cbcbef998db402207a066f9f94186890c0273ca0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_2fe9afb815f755947bef833bd0662ad2739c823b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="af7d96f6f410abb580e7812b420e058e1efb8e35">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9e9f3157df7536dc73f6a5801e32d6db5a6eaea2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_cf3ae985344535b9e7a205aed85dd7f7cf9f78c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1e014eb2b7b4214cb35d5a48fac765555115ab0d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_2ac2bf07949c14da8233384a9e29a82bb0b86299/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_9b845b5bdd67675293ec12ea18e95467e7ef2ccf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_85131323d2af9495aef00385bf34921a4d4e02ec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_b265bb509706af049ff1d901ec49cc922d728403/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_0858adf9bcd681adee7c63756072ae1969487748/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="0a798025ccf7e6c66f0f2022cb2875aafde12c3d">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_44c70b7b495f53b74cc55b4cf38100fb4da9fb21/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.1"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_015afcf12a2df827823dcf28f2ee0f499e2ebb4c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_677ae2de8f9a69489c20d7c4ea80498dbff2f35a/classes.dex" />
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_a8e85b3a5d2071fab46d6545db47fa67550ac026.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_b3430dcb94e29a47424daf1c66c2191ab15c34e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_f973d8124ad092c7cf173f0a3849cb731d31a375.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_4a54c6222523bbd842154321556660ea4d9b0bec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_bc102048a27ff00c8e10fc3a76afaa77fbe3d1bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_e70401d5ffee6b659490211055e850197fc15226.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_3d01e583dc5349fe0081815355b7923d5d5bd71b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_8a6021998b8ec99bcd42a9e6c474d11e8a7c0488.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.1"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_7bc851bd85da24487c6f0ef6403a542fe03465a5/classes.dex" />
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_21d810329636998cfce9b520d95e2ecc0f1fd102.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_04c449945946085eaee4bb58e733ecdb1af6e336.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_f615c4b5b3f9bc18384b4051cca8632f43ed28d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_ec0aeaf2d882c6560479e6184e6f37018c5642b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_c9be1307ec43f22362c1df0ec88930ede448a159.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_932c8ab878c8f375dd7af85753ec95becefa2cc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_c2c5bd0f6ca323650cea2aa267372e4d5f669a33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_1c557720f0fc022eaf092476b1e87b1a4729068f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/serk/Android/practAndroid/final/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_187e85f392a96680d92ffa054a1322ef5db3a8e4.jar" />
     </item>
 
 </items>

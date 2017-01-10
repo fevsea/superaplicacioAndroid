@@ -5,9 +5,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class BackToolBar extends AppCompatActivity {
-    private Toolbar toolbar;
     public void onCreate(String name) {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(name);
         setSupportActionBar(toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

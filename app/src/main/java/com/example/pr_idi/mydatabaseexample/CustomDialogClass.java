@@ -8,13 +8,13 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RatingBar;
 
-public class CustomDialogClass extends Dialog implements
+class CustomDialogClass extends Dialog implements
         android.view.View.OnClickListener {
 
     private Activity activity;
     private Book book;
 
-    public CustomDialogClass(Activity a, Book book) {
+    CustomDialogClass(Activity a, Book book) {
         super(a);
         this.activity = a;
         this.book = book;
