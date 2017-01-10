@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+
 public class ViewItem extends AppCompatActivity {
 
     public static final String TAG = PrincipalActivity.class.getSimpleName();
@@ -18,7 +19,8 @@ public class ViewItem extends AppCompatActivity {
     String cathegory;
     String year;
     String eval;
-    String[] values;
+    private String[] values;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,5 +47,4 @@ public class ViewItem extends AppCompatActivity {
         evalV.setEnabled(false);
 
     }
-
 }
