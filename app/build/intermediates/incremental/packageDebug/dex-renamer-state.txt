@@ -1,4 +1,7 @@
-#Mon Jan 09 15:46:17 CET 2017
-base.0=/home/serk/Android/practAndroid/partB/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/home/serk/Android/practAndroid/partB/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+#Tue Jan 10 17:18:03 CET 2017
+base.0=/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_44c70b7b495f53b74cc55b4cf38100fb4da9fb21
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9e9f3157df7536dc73f6a5801e32d6db5a6eaea2/classes.dex
+base.1=/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9e9f3157df7536dc73f6a5801e32d6db5a6eaea2
+file.0=/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_44c70b7b495f53b74cc55b4cf38100fb4da9fb21/classes.dex

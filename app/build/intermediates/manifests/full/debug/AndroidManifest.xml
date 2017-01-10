@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.pr_idi.mydatabaseexample.AddItem" />
+        <activity android:name="com.example.pr_idi.mydatabaseexample.ViewItem" />
         <activity
             android:name="com.example.pr_idi.mydatabaseexample.About"
             android:theme="@style/AppTheme.NoActionBar" />

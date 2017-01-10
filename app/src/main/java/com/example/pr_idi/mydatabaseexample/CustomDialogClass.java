@@ -29,7 +29,7 @@ public class CustomDialogClass extends Dialog implements
         RatingBar rating = (RatingBar) findViewById(R.id.ratingBar);
         String value = book.getPersonal_evaluation();
         Log.i("a", value);
-        if (value != BookData.unknown)
+        if (!value.equals(BookData.unknown))
             rating.setRating(Float.parseFloat(value));
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override

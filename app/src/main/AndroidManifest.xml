@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AddItem" />
+        <activity android:name=".ViewItem" />
         <activity android:name=".About"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Help"

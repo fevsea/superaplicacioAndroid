@@ -3,42 +3,31 @@ package com.example.pr_idi.mydatabaseexample;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.view.ContextThemeWrapper;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
-import android.view.MenuInflater;
-import android.view.MotionEvent;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.EditText;
+import android.view.View;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
-import java.util.Random;
 import java.util.Stack;
-import java.util.Vector;
 
 
 public class PrincipalActivity extends AppCompatActivity
@@ -46,11 +35,12 @@ public class PrincipalActivity extends AppCompatActivity
     public static final String TAG = PrincipalActivity.class.getSimpleName();
     static final int ITEM_ADED = 0;
     BookData mBookData;
-    Queue<Book> deleted;
+    Book deleted;
 
     private BookAdapter mAdapter;
     private RecyclerView recyclerView;
     List<Book> books;
+    public Book bookToView;
 
     Screens actual;
     Stack<Screens> screens;
@@ -63,9 +53,9 @@ public class PrincipalActivity extends AppCompatActivity
         setContentView(R.layout.activity_principal);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        setTitle("Book");
+        setTitle("Books");
         mBookData = new BookData(getApplicationContext());
-        deleted = new LinkedList<Book>();
+        mBookData.open();
         actual = Screens.TITLE;
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -83,12 +73,27 @@ public class PrincipalActivity extends AppCompatActivity
         toggle.syncState();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if(!prefs.getBoolean("firstTime", false)) {
+            addInitBooks();
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstTime", true);
+            editor.commit();
+        }
+
         recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
         generateBooks();
         recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
                 recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
-            public void onItemClick(View view, int position) {}
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(getApplicationContext(), ViewItem.class);
+                Book b = mAdapter.bookList.get(position);
+                intent.putExtra("identifier", new String[] {b.getTitle(), b.getAuthor(), b.getCategory(),
+                String.valueOf(b.getYear()), b.getPersonal_evaluation()});
+                startActivity(intent);
+            }
             @Override
             public void onLongItemClick(View view, int position) {
                 CustomDialogClass cdd = new CustomDialogClass(PrincipalActivity.this, books.get(position));
@@ -105,14 +110,27 @@ public class PrincipalActivity extends AppCompatActivity
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
-                mBookData.open();
-                Integer pos = viewHolder.getAdapterPosition();
-                Log.d(TAG, "Pos: " + pos);
+                int pos = viewHolder.getAdapterPosition();
                 Book b = books.get(pos);
-                deleted.add(b);
+                deleted = b;
                 mBookData.deleteBook(b);
-                mBookData.close();
+                mAdapter.bookList.remove(pos);
                 mAdapter.notifyItemRemoved(pos);
+                mAdapter.notifyItemRangeChanged(pos, mAdapter.bookList.size());
+
+                Snackbar.make(findViewById(R.id.content_principal), "Book removed!", Snackbar.LENGTH_LONG)
+                        .setAction("UNDO", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Snackbar snackbar1 = Snackbar.make(findViewById(R.id.content_principal), "Book successful restored", Snackbar.LENGTH_SHORT);
+                                snackbar1.show();
+                                mBookData.createBook(deleted.getTitle(), deleted.getAuthor(), deleted.getCategory(),
+                                        String.valueOf(deleted.getYear()), deleted.getPersonal_evaluation());
+                                deleted = null;
+                                updateBooks();
+                            }
+                        }).show();
+
             }
         };
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
@@ -123,9 +141,18 @@ public class PrincipalActivity extends AppCompatActivity
         recyclerView.setAdapter(mAdapter);
     }
 
+    private void addInitBooks() {
+        // Books aded the first time app is excuted
+        mBookData.createBook("Eragon","Christopher Paolini", "Fantasy novel", "2002", "4");
+        mBookData.createBook("Ender's Game","Orson Scott Card", " Science fiction", "1985", "5");
+        mBookData.createBook("Prelude to Foundation","Isaac Asimov", " Science fiction", "1988", "5");
+        mBookData.createBook("The Call of Cthulu"," H. P. Lovecraft", " Horror", "1928", "4");
+    }
+
     public void updateBooks(){
         generateBooks();
-        recyclerView.setAdapter(new BookAdapter(books, "author"));
+        mAdapter = new BookAdapter(books, "author");
+        recyclerView.setAdapter(mAdapter);
         recyclerView.invalidate();
     }
 
@@ -150,9 +177,7 @@ public class PrincipalActivity extends AppCompatActivity
     }
 
     protected void generateBooks() {
-        mBookData.open();
         books = mBookData.getAllBooks();
-        mBookData.close();
         if (actual == Screens.CATHEGORY){
             Collections.sort(books, new compareByCathegory() );
         } else if (actual == Screens.AUTHOR){
@@ -170,24 +195,6 @@ public class PrincipalActivity extends AppCompatActivity
         } else {
             super.onBackPressed();
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            Context context = getApplicationContext();
-            Toast.makeText(context, "Settings", Toast.LENGTH_LONG).show();
-            String[] newBook = new String[] { "Miguel Strogoff", "Jules Verne", "Ulysses", "James Joyce", "Don Quijote", "Miguel de Cervantes", "Metamorphosis", "Kafka" };
-            int nextInt = new Random().nextInt(4);
-            mBookData.open();
-            mBookData.createBook(newBook[nextInt*2], newBook[nextInt*2 + 1], null, null, null);
-            mBookData.close();
-            updateBooks();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -222,9 +229,8 @@ public class PrincipalActivity extends AppCompatActivity
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == ITEM_ADED) {
-            Log.d(TAG, "DETECTED");
             if (resultCode == Activity.RESULT_OK) {
-                Log.d(TAG, "EXECUTED");
+                mBookData.open();
                 updateBooks();
             }
         }

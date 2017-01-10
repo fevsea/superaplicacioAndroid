@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MyBookDatabase.iml" filepath="$PROJECT_DIR$/MyBookDatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superAplicacioAndroid.iml" filepath="$PROJECT_DIR$/superAplicacioAndroid.iml" />
     </modules>
   </component>
 </project>

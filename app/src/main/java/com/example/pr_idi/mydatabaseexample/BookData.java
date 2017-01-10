@@ -4,16 +4,16 @@ package com.example.pr_idi.mydatabaseexample;
  * BookData
  * Created by pr_idi on 10/11/16.
  */
-import java.util.ArrayList;
-import java.util.List;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BookData {
 
@@ -57,9 +57,9 @@ public class BookData {
 
         // Invented data
         values.put(MySQLiteHelper.COLUMN_PUBLISHER, unknown);
-        values.put(MySQLiteHelper.COLUMN_YEAR, (year != null) ? year : "-1");
+        values.put(MySQLiteHelper.COLUMN_YEAR, (year != null && !year.equals("-1")) ? year : "-1");
         values.put(MySQLiteHelper.COLUMN_CATEGORY, (category != null) ? category : unknown);
-        values.put(MySQLiteHelper.COLUMN_PERSONAL_EVALUATION, (eval != null) ? eval : unknown);
+        values.put(MySQLiteHelper.COLUMN_PERSONAL_EVALUATION, (eval != null) ? eval : "0");
 
         // Actual insertion of the data using the values variable
         long insertId = database.insert(MySQLiteHelper.TABLE_BOOKS, null,

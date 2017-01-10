@@ -23,5 +23,6 @@
         android:textStyle="bold"
         android:id="@+id/expandableList"
         android:layout_width="match_parent"
+        android:paddingLeft="3dp"
         android:layout_height="wrap_content"/>
 </LinearLayout>

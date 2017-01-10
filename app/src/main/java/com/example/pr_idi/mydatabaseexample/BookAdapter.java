@@ -1,10 +1,8 @@
 package com.example.pr_idi.mydatabaseexample;
 
 
-
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +15,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
 
     private static final String TAG = BookAdapter.class.getSimpleName();
 
-    private List<Book> bookList;
+    public List<Book> bookList;
     public String aux;
 
 

@@ -2,9 +2,8 @@ package com.example.pr_idi.mydatabaseexample;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -28,7 +27,7 @@ public class AddItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
-        Log.d(TAG, "Ok");
+        setTitle("New book");
     }
 
     public void onClick(View view){
@@ -45,19 +44,16 @@ public class AddItem extends AppCompatActivity {
             return;
         } else {
             author = authorV.getText().toString();
-            ;
             if (author.isEmpty()) {
                 author = null;
             }
             cathegory = cathegoryV.getText().toString();
             if (cathegory.isEmpty()) {
                 cathegory = null;
-                ;
             }
             year = yearV.getText().toString();
             if (year.isEmpty()) {
                 year = null;
-                ;
             }
 
             eval = String.valueOf(evalV.getRating());
