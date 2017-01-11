@@ -23,7 +23,7 @@ public class PrincipalActivity extends NavigationDrawer {
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rv_numbers);
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        super.onCreate(savedInstanceState, navigationView, recyclerView);
+        super.onCreate(savedInstanceState, recyclerView);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -32,6 +32,7 @@ public class PrincipalActivity extends NavigationDrawer {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         initFab(fab);
         initDelete();
+        initOpen(navigationView);
     }
 
     @Override
@@ -99,6 +100,26 @@ public class PrincipalActivity extends NavigationDrawer {
         };
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
         itemTouchHelper.attachToRecyclerView(recyclerManager.getRecycler());
+    }
+
+    private void initOpen(NavigationView navigationView) {
+        navigationView.setNavigationItemSelectedListener(this);
+        recyclerManager.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
+                recyclerManager.getRecycler(), new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent = new Intent(getApplicationContext(), ViewItem.class);
+                Book b = recyclerManager.getBook(position);
+                intent.putExtra("identifier", new String[] {b.getTitle(), b.getAuthor(), b.getCategory(),
+                        String.valueOf(b.getYear()), b.getPersonal_evaluation()});
+                startActivity(intent);
+            }
+            @Override
+            public void onLongItemClick(View view, int position) {
+                CustomDialogClass cdd = new CustomDialogClass(PrincipalActivity.this, recyclerManager.getBook(position));
+                cdd.show();
+            }
+        }));
     }
 
 }

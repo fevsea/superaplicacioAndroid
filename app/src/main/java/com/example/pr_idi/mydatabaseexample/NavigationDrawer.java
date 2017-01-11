@@ -24,10 +24,10 @@ public class NavigationDrawer extends AppCompatActivity
     protected static final int ITEM_ADED = 0;
     protected RecyclerManager recyclerManager;
 
-    protected void onCreate(Bundle savedInstanceState, NavigationView navigationView, RecyclerView recyclerView) {
+    protected void onCreate(Bundle savedInstanceState, RecyclerView recyclerView) {
         super.onCreate(savedInstanceState);
         recyclerManager = new RecyclerManager(recyclerView, getApplicationContext());
-        initOpen(navigationView);
+//        initOpen(navigationView);
 
     }
 
@@ -97,24 +97,6 @@ public class NavigationDrawer extends AppCompatActivity
         }
     }
 
-    private void initOpen(NavigationView navigationView) {
-        navigationView.setNavigationItemSelectedListener(this);
-        recyclerManager.addOnItemTouchListener(new RecyclerItemClickListener(getApplicationContext(),
-                recyclerManager.getRecycler(), new RecyclerItemClickListener.OnItemClickListener() {
-            @Override
-            public void onItemClick(View view, int position) {
-                Intent intent = new Intent(getApplicationContext(), ViewItem.class);
-                Book b = recyclerManager.getBook(position);
-                intent.putExtra("identifier", new String[] {b.getTitle(), b.getAuthor(), b.getCategory(),
-                        String.valueOf(b.getYear()), b.getPersonal_evaluation()});
-                startActivity(intent);
-            }
-            @Override
-            public void onLongItemClick(View view, int position) {
-                CustomDialogClass cdd = new CustomDialogClass(NavigationDrawer.this, recyclerManager.getBook(position));
-                cdd.show();
-            }
-        }));
-    }
+
 
 }
