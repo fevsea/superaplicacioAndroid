@@ -2,7 +2,7 @@
     <string name="txtCredits">Alejandro Agustin: https://github.com/fevsea</string>
     <string name="txtGritMark">Marc P. Masó: https://github.com/serk12</string>
     <string name="app_name">BookMe</string>
-    <string name="title_activity_principal">PrincipalActivity</string>
+    <string name="title_activity_principal">BookMe</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -28,7 +28,7 @@ class CustomDialogClass extends Dialog implements
         setContentView(R.layout.custom_dialog);
         RatingBar rating = (RatingBar) findViewById(R.id.ratingBar);
         String value = book.getPersonal_evaluation();
-        Log.i("a", value);
+        rating.setStepSize(1.0f);
         if (!value.equals(BookData.unknown))
             rating.setRating(Float.parseFloat(value));
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {

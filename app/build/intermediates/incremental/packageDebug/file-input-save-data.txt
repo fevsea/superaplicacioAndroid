@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 10 18:18:54 CET 2017
+#Tue Jan 10 21:20:41 CET 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/home/serk/Android/practAndroid/final/app/build/intermediates/res/resources-debug.ap_/res/layout/design_bottom_sheet_dialog.xml
