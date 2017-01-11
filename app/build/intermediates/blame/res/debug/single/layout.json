@@ -4,24 +4,24 @@
         "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/activity_add_item.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/src/main/res/layout/activity_add_item.xml"
-    },
-    {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/activity_view_item.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/src/main/res/layout/activity_view_item.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/activity_add_item.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/src/main/res/layout/activity_add_item.xml"
     },
     {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/list_item.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/src/main/res/layout/list_item.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_subheader.xml"
-    },
-    {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_subheader.xml"
     },
     {
         "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
@@ -68,12 +68,12 @@
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_select_dialog_material.xml"
-    },
-    {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/content_principal.xml",
@@ -92,12 +92,12 @@
         "source": "/home/alejandro/code/superAplicacioAndroid/app/src/main/res/layout/activity_help.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
@@ -108,16 +108,16 @@
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media.xml"
+        "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
+        "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
-        "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_bottom_sheet_dialog.xml"
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
@@ -128,12 +128,12 @@
         "source": "/home/serk/Android/practAndroid/final/app/src/main/res/layout/nav_header_principal.xml"
     },
     {
-        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
-    },
-    {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
         "source": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/serk/Android/practAndroid/final/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/serk/Android/practAndroid/final/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/home/alejandro/code/superAplicacioAndroid/app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
