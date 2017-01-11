@@ -27,8 +27,6 @@ public class NavigationDrawer extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState, RecyclerView recyclerView) {
         super.onCreate(savedInstanceState);
         recyclerManager = new RecyclerManager(recyclerView, getApplicationContext());
-//        initOpen(navigationView);
-
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -86,8 +84,7 @@ public class NavigationDrawer extends AppCompatActivity
         });
         return super.onCreateOptionsMenu(menu);
     }
-
-
+    
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == ITEM_ADED) {
             if (resultCode == Activity.RESULT_OK) {
@@ -96,7 +93,4 @@ public class NavigationDrawer extends AppCompatActivity
             }
         }
     }
-
-
-
 }

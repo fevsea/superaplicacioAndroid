@@ -8,8 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.RatingBar;
 
-class CustomDialogClass extends Dialog implements
-        android.view.View.OnClickListener {
+class CustomDialogClass extends Dialog {
 
     private Activity activity;
     private Book book;
@@ -43,7 +42,4 @@ class CustomDialogClass extends Dialog implements
             }
         });
     }
-
-    @Override
-    public void onClick(View v) {}
 }
