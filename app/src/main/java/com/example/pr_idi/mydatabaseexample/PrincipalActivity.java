@@ -43,13 +43,13 @@ public class PrincipalActivity extends NavigationDrawer {
 
     @Override
     protected void onResume() {
-        recyclerManager.mBookData.open();
+        recyclerManager.open();
         super.onResume();
     }
 
     @Override
     protected void onPause() {
-        recyclerManager.mBookData.close();
+        recyclerManager.close();
         super.onPause();
     }
 

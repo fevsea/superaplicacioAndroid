@@ -91,7 +91,7 @@ public class NavigationDrawer extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == ITEM_ADED) {
             if (resultCode == Activity.RESULT_OK) {
-                recyclerManager.mBookData.open();
+                recyclerManager.open();
                 recyclerManager.updateBooks();
             }
         }
@@ -104,7 +104,7 @@ public class NavigationDrawer extends AppCompatActivity
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent = new Intent(getApplicationContext(), ViewItem.class);
-                Book b = recyclerManager.mAdapter.bookList.get(position);
+                Book b = recyclerManager.getBook(position);
                 intent.putExtra("identifier", new String[] {b.getTitle(), b.getAuthor(), b.getCategory(),
                         String.valueOf(b.getYear()), b.getPersonal_evaluation()});
                 startActivity(intent);

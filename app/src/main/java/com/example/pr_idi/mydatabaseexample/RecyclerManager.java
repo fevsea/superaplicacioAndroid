@@ -10,10 +10,10 @@ import android.view.View;
 import java.util.List;
 
 public class RecyclerManager {
-    public RecyclerView recyclerView;
-    public BookDataExp mBookData;
-    public BookAdapter mAdapter;
-    public List<Book> books;
+    private RecyclerView recyclerView;
+    private BookDataExp mBookData;
+    private BookAdapter mAdapter;
+    private List<Book> books;
     private Book deleted;
     private Context context;
 
@@ -25,6 +25,13 @@ public class RecyclerManager {
         initReciclerView();
     }
 
+    public void close() {
+        mBookData.close();
+    }
+
+    public void open() {
+        mBookData.open();
+    }
     public void addOnItemTouchListener(RecyclerView.OnItemTouchListener lister) {
         recyclerView.addOnItemTouchListener(lister);
     }
