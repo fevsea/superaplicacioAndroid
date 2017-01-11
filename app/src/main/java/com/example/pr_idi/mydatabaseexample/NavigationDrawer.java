@@ -23,6 +23,7 @@ public class NavigationDrawer extends AppCompatActivity
 
     protected static final int ITEM_ADED = 0;
     protected RecyclerManager recyclerManager;
+    protected SearchView searchView;
 
     protected void onCreate(Bundle savedInstanceState, RecyclerView recyclerView) {
         super.onCreate(savedInstanceState);
@@ -35,14 +36,20 @@ public class NavigationDrawer extends AppCompatActivity
         int id = item.getItemId();
         if (id == R.id.list_cat) {
             recyclerManager.setScreen(BookDataExp.Screens.CATHEGORY);
+            searchView.setQuery("", false);
+            searchView.clearFocus();
             setTitle("Category");
             recyclerManager.updateBooks();
         } else if (id == R.id.list_title) {
             recyclerManager.setScreen(BookDataExp.Screens.TITLE);
+            searchView.setQuery("", false);
+            searchView.clearFocus();
             setTitle("Book");
             recyclerManager.updateBooks();
         } else if (id == R.id.list_author) {
             recyclerManager.setScreen(BookDataExp.Screens.AUTHOR);
+            searchView.setQuery("", false);
+            searchView.clearFocus();
             setTitle("Author");
             recyclerManager.updateBooks();
         } else if (id == R.id.about) {
@@ -63,7 +70,7 @@ public class NavigationDrawer extends AppCompatActivity
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.principal, menu);
         MenuItem item = menu.findItem(R.id.menuSearch);
-        SearchView searchView = (SearchView)item.getActionView();
+        searchView = (SearchView)item.getActionView();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
